@@ -25,13 +25,7 @@ variable "key" {
 
 variable "kms_key_id" {
   default     = ""
-  description = "Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key."
-  type        = "string"
-}
-
-variable "server_side_encryption" {
-  default     = "AES256"
-  description = "Specifies server-side encryption of the object in S3. Valid values are \"AES256\" and \"aws:kms\"."
+  description = "Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If not present, defaults to AES256"
   type        = "string"
 }
 
