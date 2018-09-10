@@ -4,7 +4,7 @@ resource "aws_s3_bucket_object" "object" {
   content_type            = "${var.content_type}"
   key                     = "${var.key}"
   kms_key_id              = "${var.kms_key_id}"
-  server_side_encryption  = "${var.server_side_encryption}"
+  server_side_encryption  = "${local.server_side_encryption}"
   tags                    = "${var.tags}"
 }
 

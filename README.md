@@ -2,6 +2,8 @@
 
 This module creates a cloudfront S3 origin object and then invalidates the object in Cloudfront.
 
+Note that this module enforces encryption, either with the supplied KMS Key or with the account default.
+
 ## Authors
 
 Module managed by Quinovas (https://github.com/QuiNovas)
